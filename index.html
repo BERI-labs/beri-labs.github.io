@@ -1,11 +1,207 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>BERI</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BERI - A lab-style framework that can be customised to your experiences. School, simplified.">
+    <title>BERI - School, simplified</title>
+    
+    <!-- Google Fonts - Serif for hero -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-  <h1>BERI Homepage</h1>
-  <p>Bespoke Education Retrieval Infrastructure</p>
+    <!-- Header / Navigation -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="nav-logo">
+                <a href="#" class="logo-link">BERI</a>
+            </div>
+            
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+            
+            <div class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="#what-is-beri">About</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="https://github.com/your-org/co-working-space" class="nav-coworking" target="_blank" rel="noopener noreferrer">Co-working Space ↗</a></li>
+                </ul>
+                
+                <a href="https://www.linkedin.com/company/your-beri-page" class="btn-linkedin" target="_blank" rel="noopener noreferrer">
+                    LinkedIn ↗
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <h1 class="hero-title">
+                School,<br>simplified
+            </h1>
+            
+            <!-- Tablet Mockup -->
+            <div class="tablet-wrapper">
+                <div class="tablet-platform"></div>
+                <div class="tablet-device">
+                    <div class="tablet-bezel">
+                        <!-- Top bar -->
+                        <div class="tablet-topbar">
+                            <span class="topbar-title">Beri</span>
+                            <div class="topbar-status">
+                                <span class="status-dot"></span>
+                                <span class="status-text">Ready</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Screen content -->
+                        <div class="tablet-screen">
+                            <img src="assets/img/beri-ui.png" alt="BERI interface screenshot" class="tablet-screenshot">
+                            <!-- Fallback if image doesn't exist -->
+                            <div class="tablet-placeholder">
+                                <p>BERI Interface</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What is BERI Section -->
+    <section class="section-what-is" id="what-is-beri">
+        <div class="container">
+            <h2 class="section-title">What is BERI?</h2>
+            <div class="what-is-content">
+                <p>
+                    BERI is a lab-style framework that can be customised to your experiences. 
+                    It empowers students to take ownership of their learning journey through 
+                    structured yet flexible research and exploration pathways.
+                </p>
+                <p>
+                    Unlike traditional classroom models, BERI provides a dynamic environment where 
+                    students engage with real-world problems, collaborate with peers, and develop 
+                    critical thinking skills. The framework adapts to individual learning styles 
+                    while maintaining rigorous academic standards and evidence-based practices.
+                </p>
+                <p>
+                    Whether you're investigating scientific phenomena, exploring historical contexts, 
+                    or tackling complex social issues, BERI gives you the tools and structure to 
+                    pursue meaningful inquiry while building essential research and analysis capabilities.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section-features">
+        <div class="container">
+            <div class="features-grid">
+                <!-- Feature 1: Bespoke -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="3"/>
+                            <path d="M12 1v6m0 6v6m5.2-13.2l-4.2 4.2m0 6l4.2 4.2M23 12h-6m-6 0H1m18.2 5.2l-4.2-4.2m0-6l4.2-4.2"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Bespoke</h3>
+                    <p class="feature-description">
+                        BERI is a flexible architecture designed to adapt to different schools, policies, 
+                        and learning environments. Swap in your own documents and experiences. BERI learns 
+                        from what you provide.
+                    </p>
+                </div>
+
+                <!-- Feature 2: Citation-Based -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                            <polyline points="14 2 14 8 20 8"/>
+                            <line x1="16" y1="13" x2="8" y2="13"/>
+                            <line x1="16" y1="17" x2="8" y2="17"/>
+                            <polyline points="10 9 9 9 8 9"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Citation-Based</h3>
+                    <p class="feature-description">
+                        Manage and track authoritative sources, ensuring consistent performance and 
+                        streamlined operations everywhere. Every answer is grounded in your school's 
+                        official policies and documentation.
+                    </p>
+                </div>
+
+                <!-- Feature 3: Data Privacy -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Data Privacy</h3>
+                    <p class="feature-description">
+                        Adapt to diverse markets with built-in localization for clear communication 
+                        and enhanced user experience. Your data stays private and secure, with no 
+                        external sharing.
+                    </p>
+                </div>
+
+                <!-- Feature 4: Student-led -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="12" y1="20" x2="12" y2="10"/>
+                            <line x1="18" y1="20" x2="18" y2="4"/>
+                            <line x1="6" y1="20" x2="6" y2="16"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Student-led</h3>
+                    <p class="feature-description">
+                        Generate precise, visually compelling reports that illustrate your growth 
+                        trajectories across all regions. Students drive their own learning and 
+                        exploration within structured guidelines.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <h2 class="footer-title">Get in Touch</h2>
+                    <p class="footer-description">
+                        Interested in learning more about BERI or bringing it to your institution? 
+                        We'd love to hear from you.
+                    </p>
+                    <a href="mailto:hello@beri.education" class="footer-email">hello@beri.education</a>
+                </div>
+                
+                <div class="footer-links">
+                    <a href="https://www.linkedin.com/company/your-beri-page" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <a href="https://github.com/your-org/co-working-space" target="_blank" rel="noopener noreferrer">Co-working Space</a>
+                    <a href="#what-is-beri">About</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 BERI. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
