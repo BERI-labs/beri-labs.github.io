@@ -1,1 +1,1 @@
-# BERI-labs-beri-labs.github.io
+beri-labs.github.io
