@@ -157,10 +157,12 @@ ul {
     align-items: center;
 }
 
-.nav-logo-img {
-    height: 36px;
+.nav-logo .nav-logo-img {
+    height: 30px;
     width: auto;
+    max-width: none;
     display: block;
+    object-fit: contain;
 }
 
 .nav-menu {
