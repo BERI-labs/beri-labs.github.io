@@ -153,10 +153,14 @@ ul {
 }
 
 .nav-logo {
-    font-weight: 700;
-    font-size: var(--font-size-xl);
-    letter-spacing: 0.04em;
-    color: var(--color-text);
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo-img {
+    height: 36px;
+    width: auto;
+    display: block;
 }
 
 .nav-menu {
