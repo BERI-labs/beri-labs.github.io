@@ -209,8 +209,7 @@ ul {
 
 /* ===== Hero ===== */
 .hero {
-    padding: var(--space-3xl) 0 var(--space-xl);
-    text-align: center;
+    padding: var(--space-sm) 0 var(--space-xl);
     overflow: hidden;
 }
 
@@ -220,17 +219,23 @@ ul {
     font-weight: 700;
     line-height: 1.1;
     letter-spacing: -0.02em;
-    margin-bottom: var(--space-xl);
+    margin-bottom: var(--space-md);
     color: var(--color-text);
+    text-align: center;
+}
+
+.hero-layout {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-lg);
 }
 
 /* Device mockup */
 .device-wrapper {
     position: relative;
-    display: inline-block;
-    width: 100%;
+    flex: 1 1 0;
+    min-width: 0;
     max-width: 860px;
-    margin: 0 auto;
 }
 
 .device-pill {
@@ -271,7 +276,7 @@ ul {
     background: var(--color-surface);
     border-radius: var(--radius-sm);
     overflow: hidden;
-    aspect-ratio: 16 / 10;
+    aspect-ratio: 7 / 8;
     position: relative;
 }
 
@@ -280,6 +285,64 @@ ul {
     height: 100%;
     border: none;
     display: block;
+}
+
+/* ===== Hero side CTA ===== */
+.hero-side-cta {
+    flex: 0 0 220px;
+    padding-top: var(--space-xl);
+    opacity: 0;
+    transform: translateX(24px);
+    animation: heroCtaIn 0.9s 0.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@keyframes heroCtaIn {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.cta-label {
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-accent);
+    margin-bottom: var(--space-xs);
+}
+
+.cta-heading {
+    font-family: var(--font-serif);
+    font-size: var(--font-size-2xl);
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--color-text);
+    margin-bottom: var(--space-sm);
+}
+
+.cta-body {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-muted);
+    line-height: 1.7;
+    margin-bottom: var(--space-lg);
+}
+
+.cta-pointer {
+    display: flex;
+    align-items: center;
+}
+
+.cta-arrow {
+    font-size: 1.75rem;
+    color: var(--color-accent);
+    display: inline-block;
+    animation: arrowBounce 1.6s ease-in-out infinite;
+}
+
+@keyframes arrowBounce {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(-10px); }
 }
 
 /* ===== Features ===== */
@@ -553,6 +616,36 @@ ul {
 
     .device-pill {
         width: 120%;
+    }
+
+    /* Hero layout stacks on mobile */
+    .hero-layout {
+        flex-direction: column;
+    }
+
+    .device-wrapper {
+        max-width: 100%;
+    }
+
+    .hero-side-cta {
+        flex: none;
+        width: 100%;
+        padding-top: 0;
+        text-align: center;
+        animation-name: heroCtaMobileIn;
+    }
+
+    @keyframes heroCtaMobileIn {
+        from { opacity: 0; transform: translateY(16px); }
+        to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .cta-pointer {
+        justify-content: center;
+    }
+
+    .cta-arrow {
+        display: none;
     }
 }
 
