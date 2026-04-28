@@ -280,7 +280,7 @@ ul {
     background: var(--color-surface);
     border-radius: var(--radius-sm);
     overflow: hidden;
-    aspect-ratio: 15 / 16;
+    aspect-ratio: 11 / 10;
     position: relative;
 }
 
