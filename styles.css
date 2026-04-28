@@ -287,6 +287,10 @@ ul {
     display: block;
 }
 
+.hero-side-spacer {
+    flex: 0 0 220px;
+}
+
 /* ===== Hero side CTA ===== */
 .hero-side-cta {
     flex: 0 0 220px;
@@ -621,6 +625,10 @@ ul {
     /* Hero layout stacks on mobile */
     .hero-layout {
         flex-direction: column;
+    }
+
+    .hero-side-spacer {
+        display: none;
     }
 
     .device-wrapper {
