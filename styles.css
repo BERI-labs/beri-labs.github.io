@@ -229,7 +229,7 @@ ul {
     position: relative;
     display: inline-block;
     width: 100%;
-    max-width: 780px;
+    max-width: 860px;
     margin: 0 auto;
 }
 
@@ -275,28 +275,11 @@ ul {
     position: relative;
 }
 
-.device-img {
+.device-iframe {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    border: none;
     display: block;
-}
-
-.device-placeholder {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    inset: 0;
-    background: var(--color-surface);
-    color: var(--color-text-muted);
-    font-size: var(--font-size-sm);
-    font-style: italic;
-}
-
-/* If image loads, hide placeholder by default */
-.device-img + .device-placeholder {
-    display: none;
 }
 
 /* ===== Features ===== */
