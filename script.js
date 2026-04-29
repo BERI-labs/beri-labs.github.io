@@ -1,5 +1,5 @@
 /* Prevent iframe-initiated scrollIntoView from scrolling the parent page.
-   When the BERI chat streams a reply it calls scrollIntoView() on new
+   When the Beri chat streams a reply it calls scrollIntoView() on new
    messages. The CSSOM spec propagates that call up through parent frames,
    causing the outer page to scroll. We detect when focus is inside the
    iframe, save the scroll position, then cancel any scroll that wasn't
